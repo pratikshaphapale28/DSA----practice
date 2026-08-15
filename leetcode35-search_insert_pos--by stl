@@ -1,0 +1,6 @@
+ int searchInsert(vector<int>& nums, int target) {
+        // by stl use this when less time is given to solve
+        
+       int ans = lower_bound(nums.begin(),nums.end(),target) - nums.begin();
+       return ans;
+   }
